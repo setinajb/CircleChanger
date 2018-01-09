@@ -92,7 +92,6 @@ def is_implemented(circle_changer_method, expected_lines=2):
     doc_string = method.__doc__
     expected = source.replace(doc_string, '')
     lines_left = expected.splitlines()
-
     return len(lines_left) > expected_lines
 
 #     # [OLDER APPROACH} There is probably a better way to do this...
